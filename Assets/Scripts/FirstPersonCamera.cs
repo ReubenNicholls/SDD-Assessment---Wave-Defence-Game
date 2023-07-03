@@ -27,7 +27,6 @@ public class FirstPersonCamera : MonoBehaviour
             cameraVertRotation -= inputY;
             cameraVertRotation = Mathf.Clamp(cameraVertRotation, -90f, 90f);
             transform.localEulerAngles = Vector3.right * cameraVertRotation;
-
             player.Rotate(Vector3.up * inputX);
         }
         

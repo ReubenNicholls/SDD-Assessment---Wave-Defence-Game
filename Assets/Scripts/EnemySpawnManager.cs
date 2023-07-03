@@ -4,21 +4,30 @@ using UnityEngine;
 
 public class EnemySpawnManager : MonoBehaviour
 {
-    private int startDelay = 2;
     public float spawnInterval = 1.5f;
+    public GameObject Enemy;
+    public StartGame StartGame;
+    public WaveUpdater WaveUpdater;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnEnemy", startDelay, spawnInterval);
+        
     }
-
     // Update is called once per frame
     void Update()
     {
-        
+        if (!StartGame.startGame || !WaveUpdater.isWaveOver)
+        {
+            while(WaveUpdater.enemyCount < WaveUpdater.waveCount * 5)
+            {
+                Invoke("SpawnEnemy", spawnInterval);
+                WaveUpdater.enemyCount++;
+            }
+        }
     }
     void SpawnEnemy()
     {
-        Vector3 spawnPos = new Vector3(Random.Range(300, 0, 300));
+        Vector3 spawnPos = new Vector3(Random.Range(300, -300), -3, Random.Range(300, -300));
+        Instantiate(Enemy, spawnPos, Enemy.transform.rotation);
     }
 }
