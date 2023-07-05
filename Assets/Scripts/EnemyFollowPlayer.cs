@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyFollowPlayer : MonoBehaviour
 {
+    public GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,4 +20,5 @@ public class EnemyFollowPlayer : MonoBehaviour
          * move towards player
          */
     }
+
 }

@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public bool isOnGround = true;
     private Rigidbody playerRb;
     public StartGame StartGame;
+    public PlayerStats PlayerStats;
+    public EnemyStats EnemyStats;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,5 +61,10 @@ public class PlayerController : MonoBehaviour
         {
             isOnGround = true;
         }
+        /* if collision.gameObject.CompareTag("Enemy")
+         * {
+         *  PlayerStats.playerHitPoints - EnemyStats.enemyDamage
+         * }
+         */
     }
 }

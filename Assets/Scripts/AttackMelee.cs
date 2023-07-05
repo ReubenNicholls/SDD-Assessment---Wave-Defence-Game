@@ -5,6 +5,8 @@ using UnityEngine;
 public class AttackMelee : MonoBehaviour
 {
     public StartGame StartGame;
+    public GameObject Player;
+    public GameObject Fist;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +39,9 @@ public class AttackMelee : MonoBehaviour
     }
     public void FistAttack()
     {
-
+        
+        Instantiate(Fist);
+        
     }
     public void SwordAttack()
     {
