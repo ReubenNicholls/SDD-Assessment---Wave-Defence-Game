@@ -9,6 +9,7 @@ public class StartGame : MonoBehaviour
     public float classRange = 0;
     public GameObject StartMenu;
     public bool startGame = false;
+    public AttackMelee AttackMelee;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +30,7 @@ public class StartGame : MonoBehaviour
             startGame = true;
         }
         else if (Input.GetKey(KeyCode.Alpha3)) 
-        { 
+        {
             classMelee = 3;
             startGame = true;
         }
