@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnInterval: 1.5
-  Enemy: {fileID: 0}
-  StartGame: {fileID: 0}
-  WaveUpdater: {fileID: 0}
+  Enemy: {fileID: 258529646935755520, guid: 85363622f9a08e84f9f74254e2d58585, type: 3}
+  StartGame: {fileID: 1077560748862174099, guid: d3291a0740eefee43b0df1244a4e3aa0, type: 3}
+  WaveUpdater: {fileID: 3432772660692501385, guid: d48006eeb6cd1d140ac22d57b9fc731a, type: 3}

@@ -46,4 +46,4 @@ MonoBehaviour:
   enemyCount: 25
   waveCount: 5
   isWaveOver: 0
-  EnemyStats: {fileID: 0}
+  EnemyStats: {fileID: 258529646935755531, guid: 85363622f9a08e84f9f74254e2d58585, type: 3}

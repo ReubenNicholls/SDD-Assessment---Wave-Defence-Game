@@ -15,40 +15,42 @@ public class AttackMelee : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (StartGame.classMelee == 1)
-        {
-            if (Input.GetKey(KeyCode.Mouse1))
-            {
+         if (StartGame.classMelee == 1)
+         {
+             if (Input.GetKey(KeyCode.Mouse0))
+             {
                 FistAttack();
-            }
-        }
-        else if (StartGame.classMelee == 2)
-        {
-            if (Input.GetKey(KeyCode.Mouse1))
-            {
-                SwordAttack();
-            }
-        }
-        else if (StartGame.classMelee == 3)
-        {
-            if (Input.GetKey(KeyCode.Mouse1))
-            {
-                SpearAttack();
-            }
-        }
-    }
-    public void FistAttack()
-    {
-        
-        Instantiate(Fist);
-        
-    }
-    public void SwordAttack()
-    {
+             }
+         }
+         else if (StartGame.classMelee == 2)
+         {
+             if (Input.GetKey(KeyCode.Mouse0))
+             {
+                 SwordAttack();
+             }
+         }
+         else if (StartGame.classMelee == 3)
+         {
+             if (Input.GetKey(KeyCode.Mouse0))
+             {
+                 SpearAttack();
+             }
+         }
+     }
+     public void FistAttack()
+     {
+        Vector3 playerPos = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z);
+         Instantiate(Fist, playerPos, Player.transform.rotation);
 
-    }
-    public void SpearAttack()
-    {
+     }
+     public void SwordAttack()
+     {
 
-    }
+     }
+     public void SpearAttack()
+     {
+
+     }
+        
+    
 }

@@ -22,7 +22,7 @@ public class EnemyStats : MonoBehaviour
     {
         if (enemyHitPoints <= 0)
         {
-            Destroy(Enemy);
+            
         }
     }
 

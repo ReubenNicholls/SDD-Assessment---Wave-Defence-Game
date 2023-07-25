@@ -17,21 +17,21 @@ public class AttackRanged : MonoBehaviour
         
         if (StartGame.classRange == 1)
         {
-            if (Input.GetKey(KeyCode.Mouse1))
+            if (Input.GetKey(KeyCode.Mouse0))
             {
                 BowAttack();
             }
         }
         else if (StartGame.classRange == 2)
         {
-            if (Input.GetKey(KeyCode.Mouse1))
+            if (Input.GetKey(KeyCode.Mouse0))
             {
                 GunAttack();
             }
         }
         else if (StartGame.classRange == 3)
         {
-            if (Input.GetKey(KeyCode.Mouse1))
+            if (Input.GetKey(KeyCode.Mouse0))
             {
                 MiscAttack();
             }

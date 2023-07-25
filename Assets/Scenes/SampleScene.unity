@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1368,14 +1368,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5881477757358277145, guid: 54e84a8f0fa7dc64793d76d8a764ff45, type: 3}
-      propertyPath: Fist
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5881477757358277145, guid: 54e84a8f0fa7dc64793d76d8a764ff45, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 5881477757358277127, guid: 54e84a8f0fa7dc64793d76d8a764ff45, type: 3}
     - target: {fileID: 5881477757358277145, guid: 54e84a8f0fa7dc64793d76d8a764ff45, type: 3}
       propertyPath: StartGame
       value: 

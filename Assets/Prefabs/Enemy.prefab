@@ -113,9 +113,9 @@ MonoBehaviour:
   enemyHitPoints: 20
   enemyDamage: 5
   enemiesKilled: 0
-  Enemy: {fileID: 0}
+  Enemy: {fileID: 258529646935755520}
   WaveUpdater: {fileID: 0}
-  PlayerStats: {fileID: 0}
+  PlayerStats: {fileID: 5881477757358277147, guid: 54e84a8f0fa7dc64793d76d8a764ff45, type: 3}
 --- !u!114 &258529646935755530
 MonoBehaviour:
   m_ObjectHideFlags: 0

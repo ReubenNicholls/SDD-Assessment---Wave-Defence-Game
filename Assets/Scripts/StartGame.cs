@@ -53,5 +53,6 @@ public class StartGame : MonoBehaviour
         {
             StartMenu.SetActive(false);
         }
+
     }
 }

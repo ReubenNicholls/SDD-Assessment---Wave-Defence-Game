@@ -281,8 +281,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartGame: {fileID: 0}
-  Player: {fileID: 0}
-  Fist: {fileID: 0}
+  Player: {fileID: 5881477757358277127}
+  Fist: {fileID: 8904169022927993580, guid: 64580becec274a048abc56d8056e0549, type: 3}
 --- !u!114 &5881477757358277146
 MonoBehaviour:
   m_ObjectHideFlags: 0
