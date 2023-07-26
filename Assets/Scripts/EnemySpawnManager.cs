@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawnManager : MonoBehaviour
 {
-    public float spawnInterval = 1.5f;
+    public float spawnInterval = 10f;
     public GameObject Enemy;
     public StartGame StartGame;
     public WaveUpdater WaveUpdater;
@@ -16,14 +16,18 @@ public class EnemySpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!StartGame.startGame || !WaveUpdater.isWaveOver)
+        if (!StartGame.startGame) 
         {
-            while(WaveUpdater.enemyCount < WaveUpdater.waveCount * 5)
-            {
-                Invoke("SpawnEnemy", spawnInterval);
-                WaveUpdater.enemyCount++;
-            }
+             if (!StartGame.startGame || !WaveUpdater.isWaveOver)
+             {
+                 while(WaveUpdater.enemyCount < WaveUpdater.waveCount * 5)
+                 {   
+                    Invoke("SpawnEnemy", spawnInterval);
+                    WaveUpdater.enemyCount++;
+                 }
+             }
         }
+        
     }
     void SpawnEnemy()
     {
